@@ -7,11 +7,14 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsLi = document.createElement(`li`);
-ingredientsLi.classList.add(`item`);
-ingredientsLi.textContent = `Potatos`;
-console.log(ingredientsLi);
+const ingredientsEl = document.querySelector("#ingredients");
 
-document.body.appendChild(ingredientsLi);
+const linkLists = ingredients.map((ingredient) => {
+  const linkList = document.createElement(`li`);
+  linkList.textContent = ingredient;
+  linkList.classList.add(`ìtem`);
+  return linkList;
 
-console.log(document.ingredients);
+});
+
+ingredientsEl.append(...linkLists);
