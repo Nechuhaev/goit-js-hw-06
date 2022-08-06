@@ -6,7 +6,6 @@ const valueEl = document.querySelector('#value');
 
 // console.log(valueEl);
 
-
 decrementCounter.addEventListener('click', () => {
     counterValue -= 1;
     // console.log(counterValue);
